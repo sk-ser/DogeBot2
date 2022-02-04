@@ -152,7 +152,7 @@ console.log(color('  Xeon Bot Inc. 2021','mediumseagreen'))
 })
 	dogexeon.on('credentials-updated', () => {
 		fs.writeFileSync('./session.json', JSON.stringify(dogexeon.base64EncodedAuthInfo(), null, '\t'))
-		info('2', 'ꪶsᴋ ᴅᴇᴠɪʟ sᴇʀꫂ⁩⁩⁴⁰⁴⁩ Loading...')
+		info('2', 'Doge Bot Loading...')
 	})
 	fs.existsSync('./session.json') && dogexeon.loadAuthInfo('./session.json')
 	dogexeon.on('connecting', () => {
@@ -307,7 +307,7 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				sendButImage(anu.jid, teks, `𝑺𝑲 𝑫𝑬𝑽𝑰𝑳`, img,but = [{buttonId:`getdescgc`, 
 
-               buttonText:{displayText: 'ᴡᴇʟᴄᴏᴍᴇ ᴠʀᴏ'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+               buttonText:{displayText: 'WELCOME'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'remove') {
 
@@ -327,7 +327,7 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				teks = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*𝙷𝚘𝚙𝚎𝚏𝚞𝚕𝚕𝚢 𝚃𝚑𝚎𝚛𝚎 𝚆𝚘𝚗𝚝 𝙱𝚎 𝙱𝚞𝚛𝚍𝚎𝚗 𝙷𝚎𝚛𝚎 𝙰𝚗𝚢𝚖𝚘𝚛𝚎* 🍒`
 
-				sendButImage(anu.jid, teks, `𝑺𝑲 𝑫𝑬𝑽𝑰𝑳`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `ɢᴏᴏᴅʙʏᴇ !!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+				sendButImage(anu.jid, teks, `𝑺𝑲 𝑫𝑬𝑽𝑰𝑳`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `GOODBYE !!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'promote') {
 
@@ -347,7 +347,7 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				teks = `「 PROMOTE - DETECTED 」\n\nName : @${num.split("@")[0]}\nStatus : Member -> Admin\nGroup : ${mdata.subject}`
 
-				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `HAPPY NOW?`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
+				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SAWADEE KHA HAPPY NOW?`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
 
 			} else if (anu.action == 'demote') {
 
